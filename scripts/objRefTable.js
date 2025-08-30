@@ -19,8 +19,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Cnds.IsTagPlaying,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
-		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Mouse.Acts.SetCursor,
@@ -46,6 +46,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.System.Acts.SetBoolVar,
+		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Cnds.While,
 		C3.Plugins.Arr.Cnds.CompareSize,
 		C3.Plugins.System.Exps.random,
@@ -54,10 +55,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.ForEach,
 		C3.Plugins.Arr.Exps.Front,
 		C3.Plugins.Arr.Acts.Pop,
-		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.System.Cnds.PickByComparison,
 		C3.Plugins.Sprite.Acts.Destroy
 	];
 };
@@ -110,7 +111,6 @@ self.C3_JsPropNameTable = [
 	{kutu: 0},
 	{no: 0},
 	{gorevD: 0},
-	{DY: 0},
 	{yonerge: 0},
 	{dogruu: 0},
 	{yonerge1: 0},
@@ -125,6 +125,9 @@ self.C3_JsPropNameTable = [
 	{cevapp: 0},
 	{DoYa: 0},
 	{Sprite: 0},
+	{bos: 0},
+	{noo: 0},
+	{DY: 0},
 	{butonlarr: 0},
 	{butonlar2: 0},
 	{zarflar: 0},
@@ -133,7 +136,9 @@ self.C3_JsPropNameTable = [
 	{dogruSayisi: 0},
 	{tiklama: 0},
 	{rastsay: 0},
-	{yanlis: 0}
+	{yanlis: 0},
+	{sorusirasi: 0},
+	{sorutiklama: 0}
 ];
 
 self.InstanceType = {
@@ -176,7 +181,6 @@ self.InstanceType = {
 	muze: class extends self.ISpriteInstance {},
 	kutu: class extends self.ISpriteInstance {},
 	gorevD: class extends self.ISpriteInstance {},
-	DY: class extends self.ISpriteInstance {},
 	yonerge: class extends self.ISpriteInstance {},
 	dogruu: class extends self.ISpriteInstance {},
 	yonerge1: class extends self.ISpriteInstance {},
@@ -191,6 +195,8 @@ self.InstanceType = {
 	cevapp: class extends self.ISpriteInstance {},
 	DoYa: class extends self.ISpriteInstance {},
 	Sprite: class extends self.ISpriteInstance {},
+	bos: class extends self.ISpriteInstance {},
+	DY: class extends self.ISpriteInstance {},
 	butonlarr: class extends self.ISpriteInstance {},
 	butonlar2: class extends self.ISpriteInstance {},
 	zarflar: class extends self.ISpriteInstance {},
